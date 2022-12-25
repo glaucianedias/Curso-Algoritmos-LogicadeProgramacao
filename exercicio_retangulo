@@ -1,0 +1,22 @@
+Algoritmo "exercicio_retangulo"
+
+
+Var
+   base, altura, area, perimetro, diagonal : real
+
+Inicio
+   escreva ("Base do retangulo: ")
+   leia(base)
+   escreva ("Altura do retangulo: ")
+   leia(altura)
+   escreva
+   area <- base * altura
+   perimetro <- (base + base) + (altura + altura)
+   diagonal <- RaizQ (Exp(base, 2.0)+Exp(altura, 2.0))
+   
+   escreval ("AREA = ", area:4:4)
+   escreval ("PERIMETRO = ", perimetro:4:4)
+   escreval ("DIAGONAL = ", diagonal:2:4)
+
+
+Fimalgoritmo
