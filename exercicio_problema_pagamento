@@ -1,0 +1,20 @@
+Algoritmo "problema_pagamento"
+
+Var
+   nome : caractere
+   salhora, pagamento : real
+   horastrab : inteiro
+
+Inicio
+    escreva("Nome: ")
+    leia(nome)
+    escreva("Valor por hora: ")
+    leia(salhora)
+    escreva("Horas trabalhadas: ")
+    leia(horastrab)
+    
+    pagamento <- horastrab * salhora
+    
+    escreva("O pagamento para ", nome, " deve ser ", pagamento:8:2)
+    
+Fimalgoritmo
