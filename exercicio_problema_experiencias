@@ -1,0 +1,53 @@
+Algoritmo "Problema_ experiencias"
+
+Var
+
+   i, n, y, x, total, contc, contr, conts, troca : inteiro
+   c1, r1, s1 : real
+   c, r, s, cobaia : caractere
+
+Inicio
+
+   escreva("Quantos casos de teste serao digitados? ")
+   leia(n)
+   
+   contc <- 0
+   contr <- 0
+   conts <- 0
+   
+   para i de 1 ate n faca
+      escreva("Quantidade de cobaias: ")
+      leia(x)
+      escreva("Tipo de cobaia: ")
+      leia(cobaia)
+
+      se (cobaia = "c") entao
+         contc <- contc + x
+      senao
+         se (cobaia = "r") entao
+            contr <- contr + x
+         senao
+            se (cobaia = "s") entao
+               conts <- conts + x
+            fimse
+         fimse
+      fimse
+   fimpara
+
+      total <- (contc + contr + conts)
+      c1 <- contc * 100 / total
+      r1 <- contr * 100 / total
+      s1 <- conts * 100 / total
+      
+   escreval
+   escreval("RELATORIO FINAL:")
+   escreval("TOTAL: ", total, " cobaias")
+   escreval("TOTAL COELHOS = ", contc)
+   escreval("TOTAL RATOS = ", contr)
+   escreval("TOTAL SAPOS = ", conts)
+   escreval("Percentual de coelhos: ", c1:2:2)
+   escreval("Percentual de ratos: ", r1:2:2)
+   escreval("Percentual de sapos: ", s1:2:2)
+
+
+Fimalgoritmo
