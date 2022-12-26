@@ -1,0 +1,26 @@
+Algoritmo "problema_dardo"
+
+Var
+
+   a, b, c, maior : real
+
+Inicio
+
+   escreval("Digite as três distancias: ")
+   leia(a)
+   leia(b)
+   leia(c)
+   
+   se (a > b) e (a > c) entao
+       escreva("MAIOR DISTANCIA = ", a)
+   senao
+       se (b > c) e (b > a) entao
+          escreva("MAIOR DISTANCIA = ", b)
+       senao
+          se (c > a) e (c > b) entao
+             escreva("MAIOR DISTANCIA = ", c)
+          fimse
+       fimse
+   fimse
+   
+Fimalgoritmo
