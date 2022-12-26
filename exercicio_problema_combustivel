@@ -39,6 +39,5 @@ Inicio
    escreval("Alcool: ", alcool)
    escreval("Gasolina: ", gasolina)
    escreval("Diesel: ", diesel)
-   
-   
+      
 Fimalgoritmo
