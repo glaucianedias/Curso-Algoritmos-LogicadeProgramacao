@@ -1,0 +1,40 @@
+Algoritmo "problema_lanchonete"
+
+Var
+
+   x : inteiro
+   quant, valorapagar : real
+
+Inicio
+
+   escreva("Código do produto comprado: ")
+   leia(x)
+   escreva("Quantidade comprada: ")
+   leia(quant)
+   
+   se (x = 1) entao
+      valorapagar <- quant * 5.00
+      escreval("Valor a pagar: R$ ", valorapagar:4:2)
+   senao
+         se (x = 2) entao
+             valorapagar <- quant * 3.50
+             escreval("Valor a pagar: R$ ", valorapagar:4:2)
+         senao
+              se (x = 3) entao
+                valorapagar <- quant * 4.80
+                escreval("Valor a pagar: R$ ", valorapagar:4:2)
+              senao
+                   se (x = 4) entao
+                       valorapagar <- quant * 8.90
+                       escreval("Valor a pagar: R$ ", valorapagar:4:2)
+                   senao
+                         se (x = 5) entao
+                             valorapagar <- quant * 7.32
+                             escreval("Valor a pagar: R$ ", valorapagar:4:2)
+                         fimse
+                   fimse
+              fimse
+         fimse
+   fimse
+
+Fimalgoritmo
