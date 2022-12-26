@@ -49,5 +49,4 @@ Inicio
    escreval("Percentual de ratos: ", r1:2:2)
    escreval("Percentual de sapos: ", s1:2:2)
 
-
 Fimalgoritmo
