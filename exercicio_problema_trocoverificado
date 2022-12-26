@@ -1,0 +1,27 @@
+Algoritmo "problema_trocoverificado"
+
+Var
+
+   preco, dinheiro, troco, total, falta: real
+   quantidade : inteiro
+
+Inicio
+
+   escreva("Preço unitário do produto: ")
+   leia(preco)
+   escreva("Quantidade comprada: ")
+   leia(quantidade)
+   escreva("Dinheiro Recebido: ")
+   leia(dinheiro)
+   
+   total <- quantidade * preco
+   troco <- dinheiro - total
+   
+   se (troco = 0) ou (troco > 0) entao
+      escreva("TROCO = ", troco:4:2)
+   senao
+      falta <- abs (troco)
+      escreva("DINHEIRO INSUFICIENTE. FALTAM ", falta:4:2, " REAIS.")
+   fimse
+
+Fimalgoritmo
