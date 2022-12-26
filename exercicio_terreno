@@ -16,6 +16,5 @@ Inicio
     
     escreval("Area do terreno= ", area)
     escreval("Preco do terreno= ", preco)
-    
-    
+      
 Fimalgoritmo
