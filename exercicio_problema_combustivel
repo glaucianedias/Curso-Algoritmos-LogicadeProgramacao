@@ -1,0 +1,44 @@
+Algoritmo "Problema_combustivel"
+
+Var
+
+   x, cont1, cont2, cont3, soma, alcool, gasolina, diesel : inteiro
+   
+Inicio
+
+   escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+   leia(x)
+   
+       cont1    <- 0
+       cont2    <- 0
+       cont3    <- 0
+
+   enquanto (x <> 4) faca
+   
+      se (x = 1) entao
+         cont1 <- cont1 + 1
+         alcool <- cont1
+      senao
+         se (x = 2) entao
+            cont2 <- cont2 + 1
+            gasolina <- cont2
+         senao
+            se (x = 3) entao
+               cont3 <- cont3 + 1
+               diesel <- cont3
+            fimse
+         fimse
+      fimse
+      
+      escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+      leia(x)
+      
+   fimenquanto
+   
+   escreval("MUITO OBRIGADO")
+   escreval("Alcool: ", alcool)
+   escreval("Gasolina: ", gasolina)
+   escreval("Diesel: ", diesel)
+   
+   
+Fimalgoritmo
