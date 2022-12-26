@@ -1,0 +1,33 @@
+Algoritmo "Problema_media_idades"
+
+Var
+
+   soma, cont, idades : inteiro
+   media : real
+
+Inicio
+
+   escreval("Digite as idades: ")
+   leia(idades)
+   
+   cont <- 0
+   soma <- 0
+   
+   se idades < 0 entao
+      escreval("IMPOSSIVEL CALCULAR")
+   fimse
+      
+   enquanto idades >= 0 faca
+   
+      soma <- soma + idades
+      cont <- cont + 1
+
+      leia(idades)
+
+   fimenquanto
+   
+   media <- soma / cont
+   
+   escreval("MEDIA = ", media:4:2)
+
+Fimalgoritmo
