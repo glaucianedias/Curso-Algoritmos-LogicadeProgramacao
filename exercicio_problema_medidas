@@ -1,0 +1,22 @@
+Algoritmo "problema_medidas"
+
+Var
+   a, b, c, areaqua, areatri, areatra : real
+
+Inicio
+   escreva("Digite a medida A: ")
+   leia(a)
+   escreva("Digite a medida B: ")
+   leia(b)
+   escreva("Digite a medida C: ")
+   leia(c)
+   
+   areaqua <- a*a
+   areatri <- (b*a)/2.0
+   areatra <- ((a+b)/2.0)*c
+   
+   escreval("AREA DO QUADRADO = ", areaqua:4:4)
+   escreval("AREA DO TRIANGULO = ", areatri:4:4)
+   escreval("AREA DO TRAPEZIO = ", areatra:4:4)
+
+Fimalgoritmo
