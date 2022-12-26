@@ -1,6 +1,5 @@
 Algoritmo "exercicio_retangulo"
 
-
 Var
    base, altura, area, perimetro, diagonal : real
 
@@ -17,6 +16,5 @@ Inicio
    escreval ("AREA = ", area:4:4)
    escreval ("PERIMETRO = ", perimetro:4:4)
    escreval ("DIAGONAL = ", diagonal:2:4)
-
 
 Fimalgoritmo
