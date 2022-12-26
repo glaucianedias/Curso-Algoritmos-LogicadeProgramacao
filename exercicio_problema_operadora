@@ -1,0 +1,23 @@
+Algoritmo "Problema_Operadora"
+
+Var
+
+   quantidade : inteiro
+   valorApagar : real
+
+Inicio
+
+   escreva("Digite a quantidade de minutos: ")
+   leia(quantidade)
+   
+   se quantidade < 100 entao
+      valorApagar <- 50.00
+   senao
+      se quantidade > 100 entao
+      valorApagar <- 50 + (quantidade - 100)*2
+      fimse
+   fimse
+   
+   escreva("Valor a pagar: R$ ", valorApagar:4:2)
+
+Fimalgoritmo
