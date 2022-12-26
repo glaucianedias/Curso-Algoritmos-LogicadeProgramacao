@@ -1,0 +1,24 @@
+Algoritmo "problema_mediaponderada"
+
+Var
+
+   n, i : inteiro
+   media, x1, x2, x3 : real
+
+Inicio
+
+   escreva("Quantos casos voce vai digitar? ")
+   leia(n)
+   
+   para i de 1 ate n faca
+      escreval("Digite tres numeros: ")
+      leia(x1)
+      leia(x2)
+      leia(x3)
+
+      media <- ((2 * x1) + (3 * x2) + (5 * x3)) / 10
+      
+      escreval("MEDIA = ", media:3:1)
+   fimpara
+
+Fimalgoritmo
