@@ -1,0 +1,44 @@
+Algoritmo "Problema_Aumento"
+
+Var
+
+   salAtual, novoSal, aumento : real
+   
+Inicio
+
+   escreva("Digite o salario da pessoa: ")
+   leia(salAtual)
+   
+   se (salAtual <= 1000.99) entao
+      novoSal <- salAtual + (salAtual / 100) * 20
+      aumento <- novoSal - SalAtual
+      escreval("Novo salario = R$ ",novoSal:4:2)
+      escreval("Aumento = R$ ", aumento:4:2)
+      escreval("Porcentagem = 20% ")
+   senao
+        se (salAtual >= 1000.01) e (salAtual <= 3000.99)  entao
+            novoSal <- salAtual + (salAtual / 100) * 15
+            aumento <- novoSal - SalAtual
+            escreval("Novo salario = R$ ",novoSal:4:2)
+            escreval("Aumento = R$ ", aumento:4:2)
+            escreval("Porcentagem = 15% ")
+        senao
+             se (salAtual >= 3000.01) e (salAtual <= 8000.99)  entao
+                 novoSal <- salAtual + (salAtual / 100) * 10
+                 aumento <- novoSal - SalAtual
+                 escreval("Novo salario = R$ ",novoSal:4:2)
+                 escreval("Aumento = R$ ", aumento:4:2)
+                 escreval("Porcentagem = 10% ")
+             senao
+                   se (salAtual >= 8000) entao
+                       novoSal <- salAtual + (salAtual / 100) * 5
+                       aumento <- novoSal - SalAtual
+                       escreval("Novo salario = R$ ",novoSal:4:2)
+                       escreval("Aumento = R$ ", aumento:4:2)
+                       escreval("Porcentagem = 5% ")
+                   fimse
+             fimse
+        fimse
+   fimse
+
+Fimalgoritmo
