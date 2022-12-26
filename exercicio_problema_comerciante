@@ -1,0 +1,71 @@
+Algoritmo "problema_comerciante"
+
+Var
+
+   n, i, cont1, cont2, cont3 : inteiro
+   nome : vetor [0..9] de caractere
+   preCompra : vetor [0..9] de real
+   preVenda : vetor [0..9] de real
+   totalcompra, totalvenda, lucrototal, lucro, lucroporcentagem : real
+   
+Inicio
+
+   escreva("Serao digitados dados de quantos produtos? ")
+   leia(n)
+   
+   para i de 0 ate n-1 faca
+      escreval("Produto", i+1, ": ")
+      escreva("Nome : ")
+      leia(nome[i])
+      escreva("Preco de compra: ")
+      leia(preCompra[i])
+      escreva("Preco de venda: ")
+      leia(preVenda[i])
+   fimpara
+
+   cont1 <- 0
+   cont2 <- 0
+   cont3 <- 0
+
+   para i de 0 ate n-1 faca
+   
+      lucro <- preVenda[i] - preCompra[i]
+      lucroporcentagem <- (lucro / preCompra[i]) * 100
+      
+      se lucroporcentagem < 10 entao
+         cont1 <- cont1 + 1
+      senao
+         se lucroporcentagem <= 20 entao
+            cont2 <- cont2 + 1
+         senao
+            se lucroporcentagem >= 20 entao
+               cont3 <- cont3 + 1
+            fimse
+         fimse
+      fimse
+   fimpara
+   
+   totalcompra <- 0
+   totalvenda  <- 0
+   lucrototal  <- 0
+   
+   para i de 0 ate n-1 faca
+      totalcompra <- totalcompra + preCompra[i]
+   fimpara
+   
+   para i de 0 ate n-1 faca
+      totalvenda <- totalvenda + preVenda[i]
+   fimpara
+   
+   lucrototal <- totalVenda - totalCompra
+   
+   escreval
+   escreval("RELATORIO: ")
+   escreval("Lucro abaixo de 10%: ", cont1)
+   escreval("Lucro entre 10% e 20%: ", cont2)
+   escreval("Lucro acima de 20%: ", cont3)
+   escreval("Valor total de compra: ", totalCompra:4:2)
+   escreval("Valor total de venda: ", totalvenda:4:2)
+   escreval("Lucro total: ", lucrototal:4:2)
+   
+Fimalgoritmo
